@@ -13,10 +13,8 @@ in
     extraConfig = gitConfig;
     ignores = [
       "*.direnv"
-      "*.envrc" # there is lorri, nix-direnv & simple direnv; let people decide
       "*hie.yaml" # ghcide files
       "\#*\#"
-      ".\#*"
     ];
     userEmail = "herulume@gmail.com";
     userName = "Eduardo Jorge";

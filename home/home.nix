@@ -22,6 +22,8 @@
 
   nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
+    vlc
+    ispell
     feh
     firefox
     neofetch
@@ -31,6 +33,16 @@
     portfolio
     unzip
     elixir_ls
+    libvterm
+    _1password-gui
+    zoom-us
+    lutris
+    openssl
+    gnome.zenity
+    steam
+    slack
+    deluge
+    zip
   ];
 
   programs.emacs = {

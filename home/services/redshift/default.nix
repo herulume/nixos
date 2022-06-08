@@ -1,4 +1,3 @@
-{ config, pkgs, ... }:
 {
   services.redshift = {
     enable = true;

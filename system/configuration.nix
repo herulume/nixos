@@ -75,6 +75,7 @@
       };
       layout = "pt";
     };
+    gnome.gnome-keyring.enable = true;
     tlp.enable = true;
     acpid.enable = true;
     printing.enable = true;
@@ -88,7 +89,7 @@
     mediaKeys.enable = true;
     mediaKeys.volumeStep = "5%";
   };
-  
+
   hardware = {
     pulseaudio = {
       enable = true;
@@ -101,7 +102,11 @@
     bluetooth = {
       enable = true;
     };
-    opengl.enable = true;
+    opengl = {
+      enable = true;
+      driSupport32Bit = true;
+      driSupport = true;
+    };
     enableRedistributableFirmware = true;
     enableAllFirmware = true;
     cpu.intel.updateMicrocode = true;
